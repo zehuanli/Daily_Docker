@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER Zehuan Li
 RUN apt-get update
 RUN apt-get install -y net-tools wget curl netcat socat
 RUN apt-get install -y vim python
