@@ -1,0 +1,6 @@
+FROM ubuntu:16.04
+RUN apt-get update
+RUN apt-get install -y net-tools wget curl netcat socat
+RUN apt-get install -y vim python
+RUN apt-get install -y build-essential gcc-multilib gdb
+RUN apt-get install -y git-core
