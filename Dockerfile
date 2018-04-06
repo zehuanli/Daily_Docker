@@ -1,7 +1,14 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 MAINTAINER Zehuan Li
 RUN apt-get update
-RUN apt-get install -y net-tools wget curl netcat socat iputils-ping traceroute lsof
-RUN apt-get install -y vim python
+RUN apt-get upgrade -y
+RUN apt-get install -y net-tools wget curl socat iputils-ping traceroute lsof zip
+RUN apt-get install -y vim python-dev python-setuptools python-pip
 RUN apt-get install -y build-essential gcc-multilib gdb
 RUN apt-get install -y git-core
+RUN apt-get install -y nmap
+
+git clone https://github.com/darkoperator/dnsrecon.git
+git clone https://github.com/ChrisTruncer/EyeWitness.git
+git clone https://github.com/SpiderLabs/Responder.git
+git clone --depth 1 https://github.com/drwetter/testssl.sh.git
