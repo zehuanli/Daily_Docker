@@ -12,3 +12,8 @@ RUN cd ~ && git clone https://github.com/darkoperator/dnsrecon.git \
     && git clone https://github.com/ChrisTruncer/EyeWitness.git \
     && git clone https://github.com/SpiderLabs/Responder.git \
     && git clone --depth 1 https://github.com/drwetter/testssl.sh.git
+
+EXPOSE 389/tcp 1433/tcp 80/tcp 139/tcp 445/tcp 21/tcp 3141/tcp 24/tcp 110/tcp 587/tcp
+EXPOSE 137/udp 138/udp 53/udp 389/udp 5553/udp
+
+ENTRYPOINT ["cd", "~"]
