@@ -8,7 +8,7 @@ RUN apt-get install -y build-essential gcc-multilib gdb
 RUN apt-get install -y git-core
 RUN apt-get install -y nmap
 
-WORKDIR ~
+WORKDIR /root
 RUN git clone https://github.com/darkoperator/dnsrecon.git \
     && git clone https://github.com/ChrisTruncer/EyeWitness.git \
     && git clone https://github.com/SpiderLabs/Responder.git \
