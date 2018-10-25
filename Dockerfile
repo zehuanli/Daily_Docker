@@ -17,7 +17,3 @@ RUN curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/conf
   chmod 755 msfinstall && \
   ./msfinstall && \
   rm -rf msfinstall
-
-EXPOSE 389/tcp 1433/tcp 80/tcp 139/tcp 445/tcp 21/tcp 3141/tcp 24/tcp 110/tcp 587/tcp
-EXPOSE 137/udp 138/udp 53/udp 389/udp 5553/udp
-
